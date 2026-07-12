@@ -39,18 +39,7 @@ export default function StrategyCallPage() {
           <p className="mt-8 text-sm leading-relaxed text-muted">{strategyCallPage.trustLine}</p>
 
           <div className="mt-12 overflow-hidden rounded-3xl border border-border bg-card">
-            <div className="border-b border-border p-6 text-center">
-              <p className="font-mono text-xs text-muted">{uiCopy.calendlyEmbed}</p>
-              <p className="mt-2 text-sm text-muted">{uiCopy.selectTimeSlot}</p>
-            </div>
-            <div className="flex min-h-[600px] items-center justify-center p-8">
-              <iframe
-                src={strategyCallPage.calendlyEmbed}
-                title="Book a Strategy Call"
-                className="h-[600px] w-full rounded-xl border-0"
-                loading="lazy"
-              />
-            </div>
+            
           </div>
         </div>
 
