@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <TickerBar />
       <Navbar />
       <main className="pt-32">
-        <section className="surface-light section-padding">
+        <section className="surface-light">
           <div className="container-custom max-w-3xl">
             <span className="font-mono text-xs uppercase tracking-[0.24em] text-accent">
               {privacy.label}

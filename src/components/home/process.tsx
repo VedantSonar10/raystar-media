@@ -8,8 +8,8 @@ export function Process() {
   const { process } = homePage;
 
   return (
-    <section className="surface-dark section-padding relative overflow-hidden">
-      <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-accent-2/10 blur-[120px]" />
+      <section className="surface-dark pt-20 pb-32 relative overflow-hidden">
+    
       <div className="container-custom relative">
         <SectionReveal>
           <SectionHeading

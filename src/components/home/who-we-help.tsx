@@ -17,7 +17,7 @@ export function WhoWeHelp() {
     const cards = el.querySelectorAll(".segment-card");
     gsap.fromTo(
       cards,
-      { y: 50, opacity: 0 },
+      { y: 24, opacity: 1 },
       {
         y: 0,
         opacity: 1,
@@ -33,7 +33,7 @@ export function WhoWeHelp() {
   }, []);
 
   return (
-    <section className="surface-light section-padding relative overflow-hidden">
+    <section className="surface-light relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(79,124,255,0.09),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(176,92,255,0.08),transparent_24%)]" />
       <div className="container-custom">
         <SectionReveal>
@@ -48,7 +48,7 @@ export function WhoWeHelp() {
           {whoWeHelp.segments.map((segment) => (
             <div
               key={segment.id}
-              className="segment-card group opacity-0 rounded-2xl border border-border bg-card p-6 shadow-[0_20px_50px_-35px_rgba(15,23,42,0.35)] transition-all duration-500 hover:-translate-y-1 hover:border-accent/30 hover:bg-card-hover hover:shadow-[0_24px_60px_-30px_rgba(79,124,255,0.25)]"
+              className="segment-card group rounded-2xl border border-border bg-card p-6 shadow-[0_20px_50px_-35px_rgba(15,23,42,0.35)] transition-all duration-500 hover:-translate-y-1 hover:border-accent/30 hover:bg-card-hover hover:shadow-[0_24px_60px_-30px_rgba(79,124,255,0.25)]"
             >
               <span className="font-mono text-xs text-accent">{segment.id}</span>
               <h3 className="mt-3 font-heading text-lg font-semibold text-foreground">

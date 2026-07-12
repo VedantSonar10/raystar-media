@@ -36,7 +36,7 @@ export function ServicesPreview() {
   const { servicesPreview } = homePage;
 
   return (
-    <section className="surface-light section-padding relative overflow-hidden">
+    <section className="surface-light relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(176,92,255,0.08),transparent_28%),radial-gradient(circle_at_top_left,rgba(79,124,255,0.08),transparent_30%)]" />
       <div className="container-custom">
         <SectionReveal>

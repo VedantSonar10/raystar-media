@@ -46,8 +46,7 @@ export function Hero() {
       });
 
       gsap.from(".hero-content > *", {
-        y: 40,
-        opacity: 0,
+        y: 24,
         duration: 0.8,
         stagger: 0.15,
         ease: "power3.out",
@@ -80,7 +79,7 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="hero-content">
             <motion.span
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               className="mb-6 inline-block rounded-full border border-border bg-card/50 px-4 py-1.5 font-mono text-xs text-accent"
             >

@@ -19,10 +19,9 @@ export function SectionReveal({ children, className, delay = 0 }: SectionRevealP
 
     gsap.fromTo(
       el,
-      { y: 40, opacity: 0 },
+      { y: 24 },
       {
         y: 0,
-        opacity: 1,
         duration: 0.8,
         delay,
         ease: "power2.out",
@@ -36,7 +35,7 @@ export function SectionReveal({ children, className, delay = 0 }: SectionRevealP
   }, [delay]);
 
   return (
-    <div ref={ref} className={cn("opacity-0", className)}>
+    <div ref={ref} className={cn("will-change-transform", className)}>
       {children}
     </div>
   );
