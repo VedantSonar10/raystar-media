@@ -8,6 +8,7 @@ import { navigation } from "@/content/site-content";
 import { Button } from "@/components/ui/button";
 import { MagneticButton } from "@/components/shared/magnetic-button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,12 +39,16 @@ export function Navbar() {
               : "bg-transparent"
           )}
         >
-          <Link href="/" className="group flex items-center gap-2">
-            <span className="font-mono text-sm font-bold tracking-wider text-cyan">
-              {navigation.logo}
-            </span>
-            <span className="hidden font-mono text-xs text-muted sm:inline">_MEDIA</span>
-          </Link>
+         <Link href="/" className="group flex items-center">
+  <Image
+    src="/raystar-media-logo.png"
+    alt="Raystar Media"
+    width={220}
+    height={89}
+    priority
+    className="h-12 w-auto md:h-13"
+  />
+</Link>
 
           <div className="hidden items-center gap-8 md:flex">
             {navigation.links.map((link) => (

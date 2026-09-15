@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { footer, siteConfig } from "@/content/site-content";
 import { cn } from "@/lib/utils";
@@ -8,9 +9,16 @@ export function Footer() {
       <div className="container-custom section-padding pb-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link href="/" className="font-mono text-sm font-bold tracking-wider text-cyan">
-              {siteConfig.name.toUpperCase().replace(" ", "_")}
-            </Link>
+            <Link href="/" className="group flex items-center">
+  <Image
+    src="/raystar-media-logo.png"
+    alt="Raystar Media"
+    width={220}
+    height={89}
+    priority
+    className="h-12 w-auto md:h-13"
+  />
+</Link>
             <p className="mt-4 text-sm leading-relaxed text-muted">{footer.description}</p>
           </div>
 
